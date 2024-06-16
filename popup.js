@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const noteElement = document.createElement("div");
       noteElement.className = "note";
       noteElement.innerHTML = `
-          <h4>${note.title}</h4>
+          <h3>${note.title}</h3>
           <p>${note.content}</p>
-          <small>${note.timeStamp}</small>
+          <p>${note.timeStamp}</p>
           <button class="delete-note-btn" data-index="${index}">x</button>
           <hr />
         `;
