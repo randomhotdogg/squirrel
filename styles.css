@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    height: 400px;
+    width: 500px;
+  }
+  
+  #list-page, #add-note-page {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%; /* Ensure full height utilization */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #notes-list {
+    /* padding: 10px; */
+    max-height: 200px;
+    overflow-y: auto;
+    flex-grow: 1; /* Allow it to grow and take available space */
+  }
+  
+  button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  textarea {
+    height: 100px; /* Adjust height as needed */
+  }
+  
+  #note-form {
+    flex-grow: 1; /* Allow form to take available space */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .note {
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .delete-note-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

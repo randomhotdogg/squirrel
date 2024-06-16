@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>QuickNotes</title>
+  </head>
+  <body>
+    <div id="list-page">
+      <div class="header">
+        <h3>Notes</h3>
+        <button id="add-note-btn">Add Note</button>
+      </div>
+      <div id="notes-list"></div>
+    </div>
+
+    <div id="add-note-page" style="display: none">
+      <button id="back-to-list-btn"><-</button>
+      <form id="note-form">
+        <input type="text" id="note-title" placeholder="Title" required />
+        <textarea id="note-content" placeholder="Content" required></textarea>
+        <button type="submit">
+          <img
+            src="./icons/idea.png"
+            alt="Save"
+            style="width: 16px; height: 16px"
+          />
+        </button>
+      </form>
+    </div>
+
+    <script src="./popup.js"></script>
+  </body>
+</html>
